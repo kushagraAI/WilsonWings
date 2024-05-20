@@ -19,9 +19,9 @@ This is a Django-based travel application that allows users to create, update, d
 
 ### Clone the Repository
 
-```bash
+```
 git clone https://github.com/https://github.com/kushagraAI/WilsonWings.git
-
+```
 ## Installation
 
 Follow these steps to set up the project on your local machine:
@@ -29,36 +29,36 @@ Follow these steps to set up the project on your local machine:
 ##### Activate virtual Environment =
 - "venv\Scripts\activate" (for windows users)
 - "source venv/bin/activate" (for linux and macOS users)
-##### Run the Project
- python manage.py runserver
+### Run the Project
+ - python manage.py runserver
 
 ###Set Up the Database
-###### Run the following commands to set up the database:
+### Run the following commands to set up the database:
 
-python manage.py makemigrations
-python manage.py migrate
+- python manage.py makemigrations
+- python manage.py migrate
 
-###Create a Superuser
-#####Create a superuser account to access the Django admin panel.
+### Create a Superuser
+#### Create a superuser account to access the Django admin panel.
 
-python manage.py createsuperuser
+- python manage.py createsuperuser
 
 
 ### Running the Tests
 To run the tests, use the following command:
 
-python manage.py test
+- python manage.py test
 
 
 ### API Endpoints
 Here are the main API endpoints provided by the application:
 
 ### Authentication
-1.Login: /api-token-auth/ (POST)
+- Login: /api-token-auth/ (POST)
 Destinations
-1. List all destinations: /destinations/ (GET) - NO authentication requires
-2. Create a new destination: /destinations/ (POST) - Requires authentication
-3. Retrieve a specific destination: /destinations/<id>/ (GET)
-4. Update a specific destination: /destinations/<id>/ (PUT) - Requires authentication
-5. Delete a specific destination: /destinations/<id>/ (DELETE) - Requires authentication
-```
+- List all destinations: /destinations/ (GET) - NO authentication requires
+- Create a new destination: /destinations/ (POST) - Requires authentication
+- Retrieve a specific destination: /destinations/<id>/ (GET)
+- Update a specific destination: /destinations/<id>/ (PUT) - Requires authentication
+-  Delete a specific destination: /destinations/<id>/ (DELETE) - Requires authentication
+   
