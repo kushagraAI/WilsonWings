@@ -9,6 +9,6 @@ router.register(r'destinations', DestinationViewSet)
 
 urlpatterns = [
     
-    path('api-token-auth/', CustomAuthToken.as_view(), name= 'auth-token'),
     path('', include(router.urls)),
+    path('api-token-auth/', CustomAuthToken.as_view(), name= 'auth-token'),
 ]
