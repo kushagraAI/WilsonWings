@@ -8,7 +8,7 @@ from .models import Destination
 class DestinationAPITest(APITestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username='testuser', password='testpassword')
+        self.user = User.objects.create_user(username='test', password='test123')
         self.token = Token.objects.create(user=self.user)
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
         self.destination = Destination.objects.create(
